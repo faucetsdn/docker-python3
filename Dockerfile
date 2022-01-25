@@ -1,6 +1,6 @@
 ## Image name: faucet/python3
 
-FROM faucet/base:6.0.0
+FROM faucet/base:7.0.0
 
 RUN apk add --no-cache python3 py-pip && \
     if [ ! -e /usr/bin/pip ]; then ln -s /usr/bin/pip3 /usr/bin/pip; fi && \
