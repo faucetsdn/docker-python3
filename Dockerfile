@@ -2,7 +2,7 @@
 
 FROM python:3.9-alpine3.15
 
-RUN apk add --no-cache bash su-exec && \
+RUN apk add --no-cache su-exec && \
     if [ ! -e /usr/bin/pip ]; then ln -s /usr/bin/pip3 /usr/bin/pip; fi && \
     if [ ! -e /usr/bin/python ]; then ln -s /usr/bin/python3 /usr/bin/python; fi
 
