@@ -1,6 +1,6 @@
 ## Image name: faucet/python3
 
-FROM python:3.12-alpine3.22
+FROM python:3.12-alpine3.23
 
 RUN apk add --no-cache su-exec && \
     if [ ! -e /usr/bin/pip ]; then ln -s /usr/bin/pip3 /usr/bin/pip; fi && \
